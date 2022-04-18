@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.body{ display: flex;
+flex-direction: row;
+
+height: 100vh;
+}
+    
+    
+
+
+h1{ display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 50px;
+    transition: 60px 2s;
+}
+h1:hover{
+    font-size: 60px;
+
+}
+.body__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100vh;
+    background-color: yellow;
+    text-align: justify;
+    font-size: 22px;
+    justify-content: center;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+  }  
+.input{
+    background-color: yellow;
+    width: 90px;    
+    height: 60px;
+    color: white;
+    border-radius: 25%;
+    border-color: rgb(59, 59, 59);
+    font-size: 20px;
+    transition: height 2s;
+    
+}
+.input:hover{
+    height: 65px;
+    width: 100px;
+    color: red;
+    background-color: rgba(0, 0, 255, 0.781);
+
+}
+.body__div{
+    background-image: url("imagen/1280w.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    
+ }   
+
+@media screen and (max-width:580px) {
+body{ display: flex;
+    flex-direction: column;
+}
+    .body__section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        font-size: 15px;
+        justify-content: center;
+
+    }
+
+    .body__div {
+        display: flex;
+        flex-direction: column;
+        background-image: url("imagen/580w.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:720px) {
+    body{
+        flex-direction: column;
+    }
+    .body__section {
+        flex-direction: column;
+        height: 100vw;
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .body__div {
+        flex-direction: column;
+        background-image: url("imagen/640w.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+
+    }
+
+}
+ 
+     
+    
+
+
+
+
+
+
+ 
+ 
+     
+ 
+    
+   
+    
+
+   
+
